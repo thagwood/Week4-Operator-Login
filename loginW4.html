@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <!--Attached Java script -->
+    <script src="change.js"></script>
+    <!--Linked CSS -->
+    <link href="loginStyle.css" rel="stylesheet" type="text/css" />
+    <head> <!--Title -->
+        <title>NOVA Laboratory Login</title>
+    </head>
+
+    <body>
+        <h1><!--This will show at the top of the screen -->
+            Please Log In...
+        </h1>
+        <br> <!--line break -->
+<!--Will show login status -->
+        <p id="loginStatus" class="texty">Status.....</p>
+        <br><!--line break -->
+        <form id="credSubmit" onsubmit="return false">
+            First Name:     <input type="text" id="fName" /> <!--Block for first name --><br>
+            Last Name:      <input type="text" id="lName" /><!--Block for last name --> <br>
+            Badge Number:   <input type="number" id="badgeID" /><!--Block for ID number --> <br>
+            <input type="submit" onclick="checkCreds();" /> <!--submit button -->
+        </form>
+    </body>
+
+</html>
